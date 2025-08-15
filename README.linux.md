@@ -2,6 +2,46 @@
 
 This project implements UNet and EfficientNet-UNet (Eff-UNet) models for image segmentation using LibTorch in C++. The project is designed to be built with CMake and requires OpenCV.
 
+## Illustration
+
+Here are some illustrations of the model's performance. For a more detailed analysis of the results, please refer to the `report.pdf` file.
+
+### Learning Curves
+
+Here are the learning curves for the UNet and Eff-UNet models, showing the training and validation error, as well as the mean Intersection over Union (mIoU) for each class.
+
+**UNet**
+
+| Error                               | IoU                                 |
+| ----------------------------------- | ----------------------------------- |
+| ![UNet Error](./stat/Unet_error.jpg) | ![UNet IoU](./stat/Unet_IoU.jpg) |
+
+**Eff-UNet**
+
+| Error                                 | IoU                                   |
+| ------------------------------------- | ------------------------------------- |
+| ![Eff-UNet Error](./stat/Eff_error.jpg) | ![Eff-UNet IoU](./stat/Eff_IoU.jpg) |
+
+### Sample Results
+
+Here are a few examples of the model's segmentation results on the validation set.
+
+**Sample 1**
+
+| Input Image                                     | Ground Truth                                                |
+| ----------------------------------------------- | ----------------------------------------------------------- |
+| ![Input 1](./dataset/final-dataset/Frame%201%20%20(2).jpg) | ![Result 1](./dataset/final-dataset/Frame%201%20%20(2).jpg___fuse.png) |
+
+**Sample 2**
+
+| Input Image                                      | Ground Truth                                                 |
+| ------------------------------------------------ | ------------------------------------------------------------ |
+| ![Input 2](./dataset/final-dataset/Frame%201%20%20(19).jpg) | ![Result 2](./dataset/final-dataset/Frame%201%20%20(19).jpg___fuse.png) |
+
+## Demo
+
+A video demonstration of building and running the project can be found here: [Google Drive](https://drive.google.com/drive/folders/1xRposITnYKEYOK9IUnwqL9fbp12j0EUz?fbclid=IwZXh0bgNhZW0CMTAAAR0crFoa-Q37gpYp_mTF_Zpb5h30Wvp3ZitJ0V6uW1sGAYPT8RJqAB1FPW0_aem_AdPUPNbnMh7DnAJzaeh7xOQmI_S8Qb5xB_pUfXmVieKH_MaZuQ7UE8Gu8czfFpvb9DsoUWp2Qwy1bqow569l5b1h)
+
 ## Directory Structure
 
 ```
